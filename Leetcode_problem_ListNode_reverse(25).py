@@ -7,7 +7,9 @@ class Solution:
         :rtype: ListNode
         """
         dummy=jump=ListNode(0)
+        dummy.next=l=r=head
         
+        while 1:
             count=0
             while r and count<k:
                 count=count+1
